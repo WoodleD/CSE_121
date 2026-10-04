@@ -1,0 +1,6 @@
+Command: ninja all
+Loading defaults file /home/lucas/esp/blink/sdkconfig.defaults...
+Loading defaults file /home/lucas/esp/blink/sdkconfig.defaults.esp32c3...
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished successfully
