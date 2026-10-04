@@ -611,6 +611,10 @@
     hint: "Some object files or prebuilt libraries were compiled with a different _GLIBCXX_HAVE_ATOMIC_LOCK_POLICY setting than the rest of the project. std::shared_ptr reference counting may exhibit undefined behavior. Rebuild all C++ code and libraries with a consistent CONFIG_COMPILER_CXX_ATOMIC_LOCK_POLICY setting."
 
 -
+    re: "error: implicit declaration of function '(esp_dma_capable_malloc|esp_dma_capable_calloc)'"
+    hint: "Use the heap_caps_malloc() or heap_caps_calloc() functions from the esp_heap_caps.h with the MALLOC_CAP_DMA flag to allocate memory that is capable of being used for DMA operations."
+
+-
     re: "has no member named 'io_loop_back'"
     hint: "If you want to bind different driver objects to the same GPIO, just set them with the same GPIO number."
 

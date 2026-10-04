@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-g++")
+set(CMAKE_CXX_COMPILER "/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "16.1.0")
@@ -19,15 +19,15 @@ set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "GNU")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
-set(CMAKE_CXX_COMPILER_SYSROOT "/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/../riscv32-esp-elf/usr")
-set(CMAKE_COMPILER_SYSROOT "/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/../riscv32-esp-elf/usr")
+set(CMAKE_CXX_COMPILER_SYSROOT "/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/../riscv32-esp-elf/usr")
+set(CMAKE_COMPILER_SYSROOT "/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/../riscv32-esp-elf/usr")
 
 
 set(CMAKE_AR "riscv32-esp-elf-gcc-ar")
-set(CMAKE_CXX_COMPILER_AR "/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar")
+set(CMAKE_CXX_COMPILER_AR "/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ar")
 set(CMAKE_RANLIB "riscv32-esp-elf-gcc-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib")
-set(CMAKE_LINKER "/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-ld")
+set(CMAKE_CXX_COMPILER_RANLIB "/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-gcc-ranlib")
+set(CMAKE_LINKER "/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-ld")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
@@ -80,7 +80,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/include/c++/16.1.0;/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/include/c++/16.1.0/riscv32-esp-elf;/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/include/c++/16.1.0/backward;/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/16.1.0/include;/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/16.1.0/include-fixed;/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/include/c++/16.1.0;/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/include/c++/16.1.0/riscv32-esp-elf;/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/include/c++/16.1.0/backward;/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/16.1.0/include;/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/16.1.0/include-fixed;/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "gcc;c;nosys;c;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/16.1.0;/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/lib/gcc;/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/lib;/home/ubuntu/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/16.1.0;/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/lib/gcc;/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/lib;/home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/riscv32-esp-elf/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

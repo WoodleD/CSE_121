@@ -1,2 +1,2 @@
-source /home/ubuntu/esp/hello_world/build/gdbinit/symbols
-source /home/ubuntu/esp/hello_world/build/gdbinit/connect
+source /home/lucas/esp/hello_world/build/gdbinit/symbols
+source /home/lucas/esp/hello_world/build/gdbinit/connect
