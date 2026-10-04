@@ -1,0 +1,2 @@
+source /home/ubuntu/esp/blink/build/bootloader/gdbinit/symbols
+source /home/ubuntu/esp/blink/build/bootloader/gdbinit/connect
