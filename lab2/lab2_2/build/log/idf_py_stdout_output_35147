@@ -1,0 +1,96 @@
+Command: /home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/lucas/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/lucas/esp/lab2/lab2_2/build/humidityTemp.elf /home/lucas/esp/lab2/lab2_2/build/bootloader/bootloader.elf -m '/home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/lucas/esp/esp-idf/tools/idf.py'
+[0;32mI (258) SCAN: found 0xESP-ROM:esp32c3-eco7-20230720[0m
+Build:Jul 20 2023
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004dc20
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1460
+load:0x403cbf10,len:0xcb0
+load:0x403ce710,len:0x2fdc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.1-dev-8199-g4d59230ddff 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct  7 2026 18:54:43[0m
+[0;32mI (25) boot: chip revision: v1.1[0m
+[0;32mI (26) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Partition Table:[0m
+[0;32mI (40) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (47) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (53) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (60) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (66) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=07144h ( 28996) map[0m
+[0;32mI (78) esp_image: segment 1: paddr=0001716c vaddr=3fc89600 size=018dch (  6364) load[0m
+[0;32mI (82) esp_image: segment 2: paddr=00018a50 vaddr=40380000 size=075c8h ( 30152) load[0m
+[0;32mI (94) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=11a30h ( 72240) map[0m
+[0;32mI (107) esp_image: segment 4: paddr=00031a58 vaddr=403875c8 size=01ec0h (  7872) load[0m
+[0;32mI (109) esp_image: segment 5: paddr=00033920 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (114) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (128) cpu_start: Unicore app[0m
+[0;32mI (136) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (136) cpu_start: Pro cpu start user code[0m
+[0;32mI (136) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (138) app_init: Application information:[0m
+[0;32mI (142) app_init: Project name:     humidityTemp[0m
+[0;32mI (146) app_init: App version:      9791305-dirty[0m
+[0;32mI (151) app_init: Compile time:     Oct  7 2026 19:56:34[0m
+[0;32mI (156) app_init: ELF file SHA256:  ade5ec5ee...[0m
+[0;32mI (160) app_init: ESP-IDF:          v6.1-dev-8199-g4d59230ddff[0m
+[0;32mI (166) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (169) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (173) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (177) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (184) heap_init: At 3FC8BE00 len 00034200 (208 KiB): RAM[0m
+[0;32mI (189) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (195) heap_init: At 3FCDC710 len 0000294C (10 KiB): Retention RAM[0m
+[0;32mI (201) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (207) spi_flash: detected chip: generic[0m
+[0;32mI (210) spi_flash: flash io: dio[0m
+[0;33mW (213) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (225) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (231) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (238) main_task: Started on CPU0[0m
+[0;32mI (238) main_task: Calling app_main()[0m
+[0;32mI (238) SCAN: found 0x07[0m
+[0;32mI (238) SCAN: found 0x0E[0m
+[0;32mI (248) SCAN: found 0x19[0m
+[0;32mI (248) SCAN: found 0x1C[0m
+[0;32mI (248) SCAN: found 0x2F[0m
+[0;32mI (248) SCAN: found 0x31[0m
+[0;32mI (248) SCAN: found 0x34[0m
+[0;32mI (258) SCAN: found 0x36[0m
+[0;32mI (258) SCAN: found 0x38[0m
+[0;32mI (258) SCAN: found 0x3A[0m
+[0;32mI (258) SCAN: found 0x3B[0m
+[0;32mI (268) SCAN: found 0x3E[0m
+[0;32mI (268) SCAN: found 0x3F[0m
+[0;32mI (268) SCAN: found 0x50[0m
+[0;32mI (268) SCAN: found 0x53[0m
+[0;32mI (278) SCAN: found 0x54[0m
+[0;32mI (278) SCAN: found 0x55[0m
+[0;32mI (278) SCAN: found 0x57[0m
+[0;32mI (278) SCAN: found 0x59[0m
+[0;32mI (278) SCAN: found 0x5A[0m
+[0;32mI (288) SCAN: found 0x5C[0m
+[0;32mI (288) SCAN: found 0x5E[0m
+[0;32mI (288) SCAN: found 0x60[0m
+[0;32mI (288) SCAN: found 0x61[0m
+[0;32mI (298) SCAN: found 0x62[0m
+[0;32mI (298) SCAN: found 0x65[0m
+[0;32mI (298) SCAN: found 0x67[0m
+[0;32mI (298) SCAN: found 0x68[0m
+[0;32mI (298) SCAN: found 0x6B[0m
+[0;32mI (308) SCAN: found 0x6E[0m
+[0;32mI (308) SCAN: found 0x70[0m
+[0;32mI (308) SCAN: found 0x71[0m
+[0;32mI (308) SCAN: found 0x73[0m
+[0;32mI (318) SCAN: found 0x75[0m
+[0;32mI (318) SCAN: found 0x77[0m
+[0;32mI (318) SCAN: found 0x78[0m
+[0;32mI (318) SCAN: found 0x7A[0m
+[0;32mI (318) SCAN: found 0x7B[0m
+[0;32mI (328) SCAN: found 0x7D[0m
+[0;32mI (328) SCAN: found 0x7E[0m
+[0;32mI (328) SCAN: total found: 40[0m
+[0;32mI (328) main_task: Returned from app_main()[0m
