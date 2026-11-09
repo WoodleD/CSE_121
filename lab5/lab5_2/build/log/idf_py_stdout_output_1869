@@ -1,0 +1,162 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/lucas/esp/lab5/lab5_2/build/bootloader && /home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/lucas/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lucas/esp/lab5/lab5_2/build/bootloader/bootloader.bin
+Bootloader binary size 0x5140 bytes. 0x2ec0 bytes (37%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/morseSensor.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/morseSensor.c.obj 
+esp-idf-configdep /home/lucas/.espressif/tools/riscv32-esp-elf/esp-16.1.0_20260609/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v6.1-dev-8199-g4d59230ddff\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/lucas/esp/lab5/lab5_2/build/config -I/home/lucas/esp/lab5/lab5_2/main -I/home/lucas/esp/esp-idf/components/esp_libc/platform_include -I/home/lucas/esp/esp-idf/components/freertos/config/include -I/home/lucas/esp/esp-idf/components/freertos/config/include/freertos -I/home/lucas/esp/esp-idf/components/freertos/config/riscv/include -I/home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/lucas/esp/esp-idf/components/freertos/esp_additions/include -I/home/lucas/esp/esp-idf/components/esp_hw_support/include -I/home/lucas/esp/esp-idf/components/esp_hw_support/include/soc -I/home/lucas/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/lucas/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/lucas/esp/esp-idf/components/esp_hw_support/etm/include -I/home/lucas/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/lucas/esp/esp-idf/components/esp_hw_support/modem/include -I/home/lucas/esp/esp-idf/components/esp_hw_support/include/soc/esp32c3 -I/home/lucas/esp/esp-idf/components/esp_hw_support/port/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hw_support/port/esp32c3/. -I/home/lucas/esp/esp-idf/components/heap/include -I/home/lucas/esp/esp-idf/components/heap/tlsf -I/home/lucas/esp/esp-idf/components/log/include -I/home/lucas/esp/esp-idf/components/soc/include -I/home/lucas/esp/esp-idf/components/soc/esp32c3 -I/home/lucas/esp/esp-idf/components/soc/esp32c3/include -I/home/lucas/esp/esp-idf/components/soc/esp32c3/register -I/home/lucas/esp/esp-idf/components/hal/platform_port/include -I/home/lucas/esp/esp-idf/components/hal/esp32c3/include -I/home/lucas/esp/esp-idf/components/hal/include -I/home/lucas/esp/esp-idf/components/esp_rom/include -I/home/lucas/esp/esp-idf/components/esp_rom/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_rom/esp32c3/include/esp32c3 -I/home/lucas/esp/esp-idf/components/esp_rom/esp32c3 -I/home/lucas/esp/esp-idf/components/esp_common/include -I/home/lucas/esp/esp-idf/components/esp_system/include -I/home/lucas/esp/esp-idf/components/esp_system/port/soc -I/home/lucas/esp/esp-idf/components/esp_system/port/include/riscv -I/home/lucas/esp/esp-idf/components/esp_system/port/include/private -I/home/lucas/esp/esp-idf/components/esp_stdio/include -I/home/lucas/esp/esp-idf/components/riscv/include -I/home/lucas/esp/esp-idf/components/esp_hal_gpio/include -I/home/lucas/esp/esp-idf/components/esp_hal_gpio/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hal_usb/include -I/home/lucas/esp/esp-idf/components/esp_hal_usb/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hal_pmu/include -I/home/lucas/esp/esp-idf/components/esp_hal_pmu/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hal_regi2c/include -I/home/lucas/esp/esp-idf/components/esp_hal_regi2c/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hal_uart/include -I/home/lucas/esp/esp-idf/components/esp_hal_uart/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hal_debug_assist/include -I/home/lucas/esp/esp-idf/components/esp_hal_debug_assist/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hal_cache/include -I/home/lucas/esp/esp-idf/components/esp_hal_cache/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hal_ana_conv/include -I/home/lucas/esp/esp-idf/components/esp_hal_ana_conv/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_hal_dma/include -I/home/lucas/esp/esp-idf/components/esp_hal_dma/esp32c3/include -I/home/lucas/esp/esp-idf/components/esp_adc/include -I/home/lucas/esp/esp-idf/components/esp_adc/interface -I/home/lucas/esp/esp-idf/components/esp_adc/esp32c3/include @"/home/lucas/esp/lab5/lab5_2/build/toolchain/cflags" -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -Wunused-but-set-variable=1 -fmacro-prefix-map=/home/lucas/esp/lab5/lab5_2=. -fmacro-prefix-map=/home/lucas/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-lto -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/morseSensor.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/morseSensor.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/morseSensor.c.obj -c /home/lucas/esp/lab5/lab5_2/main/morseSensor.c
+In file included from /home/lucas/esp/esp-idf/components/log/include/esp_log.h:20,
+                 from /home/lucas/esp/lab5/lab5_2/main/morseSensor.c:5:
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c: In function 'app_main':
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:23: error: expected ')' before 'on'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |                       ^~
+/home/lucas/esp/esp-idf/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:220:72: note: to match this '('
+  220 |         if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_ERROR)        { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_ERROR),   tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:23: error: expected ')' before 'on'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |                       ^~
+/home/lucas/esp/esp-idf/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:221:72: note: to match this '('
+  221 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_WARN)    { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_WARN),    tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:23: error: expected ')' before 'on'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |                       ^~
+/home/lucas/esp/esp-idf/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:222:72: note: to match this '('
+  222 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_DEBUG)   { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_DEBUG),   tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:23: error: expected ')' before 'on'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |                       ^~
+/home/lucas/esp/esp-idf/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:223:72: note: to match this '('
+  223 |         else if (ESP_LOG_GET_LEVEL(configs)==ESP_LOG_VERBOSE) { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_VERBOSE), tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:23: error: expected ')' before 'on'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |                       ^~
+/home/lucas/esp/esp-idf/components/log/include/esp_log_format.h:15:88: note: in definition of macro 'LOG_FORMAT'
+   15 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:224:72: note: to match this '('
+  224 |         else                                                  { esp_log(ESP_LOG_CONFIG_INIT(ESP_LOG_INFO),    tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                        ^
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:165:94: note: in expansion of macro 'ESP_LOG_LEVEL'
+  165 | #define ESP_LOG_LEVEL_LOCAL(configs, tag, format, ...) do { if (_ESP_LOG_ENABLED(configs)) { ESP_LOG_LEVEL(configs, tag, format, ##__VA_ARGS__); } } while(0)
+      |                                                                                              ^~~~~~~~~~~~~
+/home/lucas/esp/esp-idf/components/log/include/esp_log.h:127:41: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  127 | #define ESP_LOGI(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO, tag, format, ##__VA_ARGS__); } while(0)
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:67:9: note: in expansion of macro 'ESP_LOGI'
+   67 |         ESP_LOGI(TAG, on ? "on" : "off");
+      |         ^~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:66:14: warning: unused variable 'on' [-Wunused-variable]
+   66 |         bool on = (val > THRESHOLD) ? true : false;
+      |              ^~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:60:9: warning: unused variable 'offDuration' [-Wunused-variable]
+   60 |     int offDuration = 0;                                        // keep track of how many time units we're off
+      |         ^~~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:59:9: warning: unused variable 'onDuration' [-Wunused-variable]
+   59 |     int onDuration = 0;                                         // keep track of how many time units we're on
+      |         ^~~~~~~~~~
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c: At top level:
+/home/lucas/esp/lab5/lab5_2/main/morseSensor.c:17:20: warning: 'MORSE' defined but not used [-Wunused-variable]
+   17 | static const char *MORSE[36] =
+      |                    ^~~~~
+configdep.c:684: in main: exec_process exited with error code: 1
+ninja: build stopped: subcommand failed.

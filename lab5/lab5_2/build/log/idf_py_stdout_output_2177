@@ -1,0 +1,148 @@
+Command: /home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/lucas/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/lucas/esp/lab5/lab5_2/build/oneshot_read.elf /home/lucas/esp/lab5/lab5_2/build/bootloader/bootloader.elf -m '/home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/lucas/esp/esp-idf/tools/idf.py'
+[0;32mI (106) esp_image: segment 4: paddr=0003059c vaddr=40387a94 sizeESP-ROM:esp32c3-eco7-20230720[0m
+Build:Jul 20 2023
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40047ea4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1460
+load:0x403cbf10,len:0xcb0
+load:0x403ce710,len:0x2fdc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.1-dev-8199-g4d59230ddff 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov  3 2026 22:28:59[0m
+[0;32mI (25) boot: chip revision: v1.1[0m
+[0;32mI (26) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Partition Table:[0m
+[0;32mI (40) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (47) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (53) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (60) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (66) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=06c50h ( 27728) map[0m
+[0;32mI (78) esp_image: segment 1: paddr=00016c78 vaddr=3fc89200 size=01904h (  6404) load[0m
+[0;32mI (82) esp_image: segment 2: paddr=00018584 vaddr=40380000 size=07a94h ( 31380) load[0m
+[0;32mI (94) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=10574h ( 66932) map[0m
+[0;32mI (106) esp_image: segment 4: paddr=0003059c vaddr=40387a94 size=015c8h (  5576) load[0m
+[0;32mI (108) esp_image: segment 5: paddr=00031b6c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (114) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (127) cpu_start: Unicore app[0m
+[0;32mI (136) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (136) cpu_start: Pro cpu start user code[0m
+[0;32mI (136) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (138) app_init: Application information:[0m
+[0;32mI (142) app_init: Project name:     oneshot_read[0m
+[0;32mI (146) app_init: App version:      b9adb54-dirty[0m
+[0;32mI (150) app_init: Compile time:     Nov  3 2026 22:28:41[0m
+[0;32mI (155) app_init: ELF file SHA256:  b39912156...[0m
+[0;32mI (160) app_init: ESP-IDF:          v6.1-dev-8199-g4d59230ddff[0m
+[0;32mI (165) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (169) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (173) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (177) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (183) heap_init: At 3FC8BA70 len 00034590 (209 KiB): RAM[0m
+[0;32mI (188) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (195) heap_init: At 3FCDC710 len 0000294C (10 KiB): Retention RAM[0m
+[0;32mI (201) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (207) spi_flash: detected chip: generic[0m
+[0;32mI (210) spi_flash: flash io: dio[0m
+[0;33mW (213) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (225) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (231) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (238) main_task: Started on CPU0[0m
+[0;32mI (238) main_task: Calling app_main()[0m
+[0;32mI (458) morseSensor: off[0m
+[0;32mI (678) morseSensor: off[0m
+[0;32mI (898) morseSensor: off[0m
+[0;32mI (1118) morseSensor: off[0m
+[0;32mI (1338) morseSensor: off[0m
+[0;32mI (1558) morseSensor: off[0m
+[0;32mI (1778) morseSensor: off[0m
+[0;32mI (1998) morseSensor: off[0m
+[0;32mI (2218) morseSensor: off[0m
+[0;32mI (2428) morseSensor: off[0m
+[0;32mI (2648) morseSensor: off[0m
+[0;32mI (2868) morseSensor: off[0m
+[0;32mI (3088) morseSensor: off[0m
+[0;32mI (3308) morseSensor: off[0m
+[0;32mI (3528) morseSensor: off[0m
+[0;32mI (3748) morseSensor: off[0m
+[0;32mI (3968) morseSensor: off[0m
+[0;32mI (4188) morseSensor: off[0m
+[0;32mI (4408) morseSensor: off[0m
+[0;32mI (4628) morseSensor: off[0m
+[0;32mI (4848) morseSensor: off[0m
+[0;32mI (5068) morseSensor: off[0m
+[1;31mE (5238) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (5238) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (5238) task_wdt: Tasks currently running:[0m
+[1;31mE (5238) task_wdt: CPU 0: main[0m
+[1;31mE (5238) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40047e9e  RA      : 0x4200763e  SP      : 0x3fc8cfd0  GP      : 0x3fc89a00  
+TP      : 0x3fc8d070  T0      : 0x40058d30  T1      : 0x4003b728  T2      : 0x00000000  
+S0/FP   : 0x00000137  S1      : 0x00000cfa  A0      : 0x00013880  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x31fb8a78  A5      : 0x0000caf1  
+A6      : 0xfffff3ff  A7      : 0x0000000a  S2      : 0x00000003  S3      : 0x3fc8d864  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (5378) morseSensor: off[0m
+[0;32mI (5598) morseSensor: off[0m
+[0;32mI (5818) morseSensor: off[0m
+[0;32mI (6038) morseSensor: off[0m
+[0;32mI (6258) morseSensor: off[0m
+[0;32mI (6478) morseSensor: off[0m
+[0;32mI (6698) morseSensor: off[0m
+[0;32mI (6918) morseSensor: off[0m
+[0;32mI (7138) morseSensor: off[0m
+[0;32mI (7358) morseSensor: off[0m
+[0;32mI (7568) morseSensor: off[0m
+[0;32mI (7788) morseSensor: off[0m
+[0;32mI (8008) morseSensor: off[0m
+[0;32mI (8228) morseSensor: off[0m
+[0;32mI (8448) morseSensor: off[0m
+[0;32mI (8668) morseSensor: off[0m
+[0;32mI (8888) morseSensor: off[0m
+[0;32mI (9108) morseSensor: off[0m
+[0;32mI (9328) morseSensor: off[0m
+[0;32mI (9548) morseSensor: off[0m
+[0;32mI (9768) morseSensor: off[0m
+[0;32mI (9988) morseSensor: off[0m
+[0;32mI (10208) morseSensor: off[0m
+[1;31mE (10238) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[1;31mE (10238) task_wdt:  - IDLE (CPU 0)[0m
+[1;31mE (10238) task_wdt: Tasks currently running:[0m
+[1;31mE (10238) task_wdt: CPU 0: main[0m
+[1;31mE (10238) task_wdt: Print CPU 0 (current core) registers[0m
+Core  0 register dump:
+MEPC    : 0x40047ea4  RA      : 0x4200763e  SP      : 0x3fc8cfd0  GP      : 0x3fc89a00  
+TP      : 0x3fc8d070  T0      : 0x40058d30  T1      : 0x4003b728  T2      : 0x00000000  
+S0/FP   : 0x00000038  S1      : 0x00000250  A0      : 0x00013880  A1      : 0x00000000  
+A2      : 0x00000000  A3      : 0x00000001  A4      : 0x61aaf7a2  A5      : 0x000065c9  
+A6      : 0xfffff3ff  A7      : 0x0000000a  S2      : 0x00000003  S3      : 0x3fc8d864  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001889  MTVEC   : 0x40380001  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+MHARTID : 0x00000000  
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+[0;32mI (10518) morseSensor: off[0m
+[0;32mI (10738) morseSensor: off[0m
+[0;32mI (10958) morseSensor: off[0m
+[0;32mI (11178) morseSensor: off[0m
+[0;32mI (11398) morseSensor: off[0m
+[0;32mI (11618) morseSensor: off[0m
+[0;32mI (11838) morseSensor: off[0m
+[0;32mI (12058) morseSensor: off[0m
+[0;32mI (12278) morseSensor: off[0m
+[0;32mI (12498) morseSensor: off[0m
+[0;32mI (12708) morseSensor: off[0m
+[0;32mI (12928) morseSensor: off[0m
+[0;32mI (13148) morseSensor: off[0m
+[0;32mI (13368) morseSensor: off[0m
+[0;32mI (13588) morseSensor: off[0m

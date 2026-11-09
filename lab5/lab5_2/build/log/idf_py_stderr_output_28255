@@ -1,0 +1,29 @@
+Command: /home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/lucas/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/lucas/esp/lab5/lab5_2/build/oneshot_read.elf /home/lucas/esp/lab5/lab5_2/build/bootloader/bootloader.elf -m '/home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/lucas/esp/esp-idf/tools/idf.py'
+--- esp-idf-monitor 1.10.0 on /dev/ttyACM0 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x40385352: vPortEnterCritical at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:649
+--- 0x403cbf10: esp_bootloader_get_description at /home/lucas/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:38
+--- 0x403ce710: is_xmc_chip_strict at /home/lucas/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:912
+--- 0x403cbf1a: call_start_cpu0 at /home/lucas/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+--- Stack dump detected
+--- 0x40047ea4: main in ROM
+--- 0x4200788a: app_main at /home/lucas/esp/lab5/lab5_2/main/morseSensor.c:84
+--- 0x4003b728: rom_phy_ant_init in ROM
+--- 0x40380001: _vector_table at /home/lucas/esp/esp-idf/components/riscv/vectors_intc.S:54
+--- 0x4038534c: vPortClearInterruptMaskFromISR at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:524
+--- 0x403853d8: vPortExitCritical at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:679
+--- 0x4003b728: rom_phy_ant_init in ROM
+--- 0x40380001: _vector_table at /home/lucas/esp/esp-idf/components/riscv/vectors_intc.S:54
+--- 0x4038534c: vPortClearInterruptMaskFromISR at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:524
+--- 0x403853d8: vPortExitCritical at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:679
+--- 0x4003b728: rom_phy_ant_init in ROM
+--- 0x40380001: _vector_table at /home/lucas/esp/esp-idf/components/riscv/vectors_intc.S:54
+--- 0x4038534c: vPortClearInterruptMaskFromISR at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:524
+--- 0x403853d8: vPortExitCritical at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:679
+--- 0x4003b728: rom_phy_ant_init in ROM
+--- 0x40380001: _vector_table at /home/lucas/esp/esp-idf/components/riscv/vectors_intc.S:54
+--- 0x4038534c: vPortClearInterruptMaskFromISR at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:524
+--- 0x403853d8: vPortExitCritical at /home/lucas/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:679
+--- 0x4003b728: rom_phy_ant_init in ROM
+--- 0x40380001: _vector_table at /home/lucas/esp/esp-idf/components/riscv/vectors_intc.S:54
+

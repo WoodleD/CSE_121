@@ -1,0 +1,2 @@
+source /home/lucas/esp/lab5/lab5_2/build/gdbinit/symbols
+source /home/lucas/esp/lab5/lab5_2/build/gdbinit/connect
