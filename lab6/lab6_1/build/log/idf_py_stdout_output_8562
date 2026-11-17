@@ -1,0 +1,311 @@
+Command: /home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/lucas/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/lucas/esp/lab6/lab6_1/build/i2c_tools.elf /home/lucas/esp/lab6/lab6_1/build/bootloader/bootloader.elf -m '/home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/lucas/esp/esp-idf/tools/idf.py'
+[0;32mI (108) esp_image: segment 4: paddr=000331cc vaddr=40387008 sizeESP-ROM:esp32c3-eco7-20230720[0m
+Build:Jul 20 2023
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40383c6c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1460
+load:0x403cbf10,len:0xcb0
+load:0x403ce710,len:0x2fdc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.1-dev-8199-g4d59230ddff 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 15 2026 21:55:55[0m
+[0;32mI (25) boot: chip revision: v1.1[0m
+[0;32mI (26) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Partition Table:[0m
+[0;32mI (40) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (47) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (53) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (60) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (66) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=07704h ( 30468) map[0m
+[0;32mI (78) esp_image: segment 1: paddr=0001772c vaddr=3fc89600 size=018dch (  6364) load[0m
+[0;32mI (82) esp_image: segment 2: paddr=00019010 vaddr=40380000 size=07008h ( 28680) load[0m
+[0;32mI (94) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=131a4h ( 78244) map[0m
+[0;32mI (108) esp_image: segment 4: paddr=000331cc vaddr=40387008 size=024a8h (  9384) load[0m
+[0;32mI (110) esp_image: segment 5: paddr=0003567c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (115) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (129) cpu_start: Unicore app[0m
+[0;32mI (137) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (137) cpu_start: Pro cpu start user code[0m
+[0;32mI (137) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (139) app_init: Application information:[0m
+[0;32mI (143) app_init: Project name:     i2c_tools[0m
+[0;32mI (147) app_init: App version:      1c4d929-dirty[0m
+[0;32mI (151) app_init: Compile time:     Nov 15 2026 21:48:17[0m
+[0;32mI (156) app_init: ELF file SHA256:  037444a60...[0m
+[0;32mI (161) app_init: ESP-IDF:          v6.1-dev-8199-g4d59230ddff[0m
+[0;32mI (166) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (170) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (174) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (178) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (184) heap_init: At 3FC8BE00 len 00034200 (208 KiB): RAM[0m
+[0;32mI (189) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (196) heap_init: At 3FCDC710 len 0000294C (10 KiB): Retention RAM[0m
+[0;32mI (202) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (208) spi_flash: detected chip: generic[0m
+[0;32mI (211) spi_flash: flash io: dio[0m
+[0;33mW (214) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (226) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (232) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) main_task: Started on CPU0[0m
+[0;32mI (239) main_task: Calling app_main()[0m
+[0;32mI (239) RANGE: probe 0x70: ESP_OK[0m
+[0;32mI (269) RANGE: Distance: 11.8 cm at 24C[0m
+[0;32mI (1299) RANGE: Distance: 12.8 cm at 24C[0m
+[0;32mI (2329) RANGE: Distance: 12.5 cm at 24C[0m
+[0;32mI (3359) RANGE: Distance: 16.2 cm at 24C[0m
+[0;33mW (4419) RANGE: echo stuck high[0m
+[0;32mI (5449) RANGE: Distance: 16.5 cm at 24C[0m
+[0;32mI (6479) RANGE: Distance: 16.5 cm at 24C[0m
+[0;32mI (7509) RANGE: Distance: 16.5 cm at 24C[0m
+[0;32mI (8539) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (9569) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (10599) RANGE: Distance: 19.4 cm at 24C[0m
+[0;32mI (11629) RANGE: Distance: 6.2 cm at 24C[0m
+[0;32mI (12659) RANGE: Distance: 19.4 cm at 24C[0m
+[0;32mI (13689) RANGE: Distance: 19.8 cm at 24C[0m
+[0;32mI (14719) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (15749) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (16779) RANGE: Distance: 19.1 cm at 24C[0m
+[0;32mI (17809) RANGE: Distance: 19.1 cm at 24C[0m
+[0;32mI (18839) RANGE: Distance: 19.1 cm at 24C[0m
+[0;32mI (19869) RANGE: Distance: 18.8 cm at 24C[0m
+[0;32mI (20899) RANGE: Distance: 20.4 cm at 24C[0m
+[0;32mI (21929) RANGE: Distance: 23.9 cm at 24C[0m
+[0;32mI (22959) RANGE: Distance: 22.4 cm at 24C[0m
+[0;32mI (23989) RANGE: Distance: 23.0 cm at 24C[0m
+[0;32mI (25019) RANGE: Distance: 25.3 cm at 24C[0m
+[0;32mI (26049) RANGE: Distance: 6.2 cm at 24C[0m
+[0;32mI (27079) RANGE: Distance: 5.5 cm at 24C[0m
+[0;32mI (28109) RANGE: Distance: 4.2 cm at 24C[0m
+[0;32mI (29139) RANGE: Distance: 3.6 cm at 24C[0m
+[0;32mI (30169) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (31199) RANGE: Distance: 5.9 cm at 24C[0m
+[0;32mI (32229) RANGE: Distance: 6.2 cm at 24C[0m
+[0;32mI (33259) RANGE: Distance: 21.4 cm at 24C[0m
+[0;32mI (34289) RANGE: Distance: 16.5 cm at 24C[0m
+[0;32mI (35319) RANGE: Distance: 6.8 cm at 24C[0m
+[0;32mI (36349) RANGE: Distance: 4.9 cm at 24C[0m
+[0;32mI (37379) RANGE: Distance: 4.9 cm at 24C[0m
+[0;32mI (38409) RANGE: Distance: 16.5 cm at 24C[0m
+[0;32mI (39439) RANGE: Distance: 5.2 cm at 24C[0m
+[0;32mI (40469) RANGE: Distance: 3.3 cm at 24C[0m
+[0;32mI (41499) RANGE: Distance: 3.3 cm at 24C[0m
+[0;32mI (42529) RANGE: Distance: 3.6 cm at 24C[0m
+[0;32mI (43559) RANGE: Distance: 19.1 cm at 24C[0m
+[0;32mI (44589) RANGE: Distance: 18.8 cm at 24C[0m
+[0;32mI (45619) RANGE: Distance: 23.3 cm at 24C[0m
+[0;32mI (46649) RANGE: Distance: 19.8 cm at 24C[0m
+[0;32mI (47679) RANGE: Distance: 16.5 cm at 24C[0m
+[0;32mI (48709) RANGE: Distance: 19.1 cm at 24C[0m
+[0;32mI (49739) RANGE: Distance: 18.8 cm at 24C[0m
+[0;32mI (50769) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (51799) RANGE: Distance: 18.8 cm at 24C[0m
+[0;32mI (52829) RANGE: Distance: 18.8 cm at 24C[0m
+[0;32mI (53859) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (54889) RANGE: Distance: 19.4 cm at 24C[0m
+[0;32mI (55919) RANGE: Distance: 18.2 cm at 23C[0m
+[0;32mI (56949) RANGE: Distance: 18.1 cm at 24C[0m
+[0;32mI (57979) RANGE: Distance: 18.5 cm at 24C[0m
+[0;32mI (59009) RANGE: Distance: 19.4 cm at 24C[0m
+[0;32mI (60039) RANGE: Distance: 19.4 cm at 23C[0m
+[0;32mI (61069) RANGE: Distance: 19.8 cm at 24C[0m
+[0;32mI (62099) RANGE: Distance: 23.0 cm at 23C[0m
+[0;32mI (63129) RANGE: Distance: 8.4 cm at 23C[0m
+[0;32mI (64159) RANGE: Distance: 10.1 cm at 24C[0m
+[0;32mI (65189) RANGE: Distance: 30.2 cm at 23C[0m
+[0;32mI (66219) RANGE: Distance: 3.3 cm at 23C[0m
+[0;32mI (67249) RANGE: Distance: 31.0 cm at 23C[0m
+[0;32mI (68279) RANGE: Distance: 18.5 cm at 23C[0m
+[0;32mI (69309) RANGE: Distance: 19.8 cm at 23C[0m
+[0;32mI (70339) RANGE: Distance: 17.2 cm at 23C[0m
+[0;32mI (71369) RANGE: Distance: 22.7 cm at 24C[0m
+[0;32mI (72399) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (73429) RANGE: Distance: 20.1 cm at 23C[0m
+[0;32mI (74459) RANGE: Distance: 19.8 cm at 24C[0m
+[0;32mI (75489) RANGE: Distance: 20.1 cm at 23C[0m
+[0;32mI (76519) RANGE: Distance: 20.1 cm at 23C[0m
+[0;32mI (77549) RANGE: Distance: 19.7 cm at 24C[0m
+[0;32mI (78579) RANGE: Distance: 19.8 cm at 23C[0m
+[0;32mI (79609) RANGE: Distance: 19.1 cm at 24C[0m
+[0;32mI (80639) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (81669) RANGE: Distance: 20.1 cm at 23C[0m
+[0;32mI (82699) RANGE: Distance: 18.5 cm at 24C[0m
+[0;32mI (83729) RANGE: Distance: 3.0 cm at 24C[0m
+[0;32mI (84759) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (85789) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (86819) RANGE: Distance: 36.3 cm at 24C[0m
+[0;32mI (87849) RANGE: Distance: 41.2 cm at 24C[0m
+[0;32mI (88879) RANGE: Distance: 75.8 cm at 24C[0m
+[0;32mI (89919) RANGE: Distance: 148.4 cm at 24C[0m
+[0;32mI (90949) RANGE: Distance: 108.3 cm at 24C[0m
+[0;32mI (91979) RANGE: Distance: 112.7 cm at 24C[0m
+[0;32mI (93009) RANGE: Distance: 108.2 cm at 24C[0m
+[0;32mI (94039) RANGE: Distance: 109.2 cm at 24C[0m
+[0;32mI (95079) RANGE: Distance: 141.7 cm at 24C[0m
+[0;32mI (96109) RANGE: Distance: 38.9 cm at 24C[0m
+[0;32mI (97149) RANGE: Distance: 145.4 cm at 24C[0m
+[0;32mI (98189) RANGE: Distance: 144.8 cm at 24C[0m
+[0;32mI (99229) RANGE: Distance: 144.7 cm at 24C[0m
+[0;32mI (100269) RANGE: Distance: 144.6 cm at 24C[0m
+[0;32mI (101309) RANGE: Distance: 144.6 cm at 24C[0m
+[0;32mI (102349) RANGE: Distance: 144.3 cm at 24C[0m
+[0;32mI (103389) RANGE: Distance: 144.5 cm at 24C[0m
+[0;32mI (104429) RANGE: Distance: 145.1 cm at 24C[0m
+[0;32mI (105459) RANGE: Distance: 111.4 cm at 24C[0m
+[0;32mI (106489) RANGE: Distance: 6.5 cm at 24C[0m
+[0;32mI (107519) RANGE: Distance: 4.9 cm at 24C[0m
+[0;32mI (108549) RANGE: Distance: 8.4 cm at 24C[0m
+[0;32mI (109579) RANGE: Distance: 50.4 cm at 24C[0m
+[0;32mI (110609) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (111639) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (112679) RANGE: Distance: 177.9 cm at 24C[0m
+[0;32mI (113719) RANGE: Distance: 179.2 cm at 24C[0m
+[0;32mI (114749) RANGE: Distance: 118.2 cm at 24C[0m
+[0;32mI (115789) RANGE: Distance: 120.8 cm at 24C[0m
+[0;32mI (116839) RANGE: Distance: 130.5 cm at 24C[0m
+[0;32mI (117879) RANGE: Distance: 126.3 cm at 24C[0m
+[0;32mI (118909) RANGE: Distance: 125.9 cm at 24C[0m
+[0;32mI (119959) RANGE: Distance: 126.3 cm at 24C[0m
+[0;32mI (120989) RANGE: Distance: 125.0 cm at 24C[0m
+[0;32mI (122029) RANGE: Distance: 125.5 cm at 24C[0m
+[0;32mI (123079) RANGE: Distance: 127.2 cm at 24C[0m
+[0;32mI (124109) RANGE: Distance: 125.5 cm at 24C[0m
+[0;32mI (125149) RANGE: Distance: 125.5 cm at 24C[0m
+[0;32mI (126199) RANGE: Distance: 161.5 cm at 24C[0m
+[0;32mI (127229) RANGE: Distance: 60.7 cm at 24C[0m
+[0;32mI (128259) RANGE: Distance: 61.4 cm at 24C[0m
+[0;32mI (129299) RANGE: Distance: 161.6 cm at 24C[0m
+[0;32mI (130329) RANGE: Distance: 60.1 cm at 24C[0m
+[0;32mI (131359) RANGE: Distance: 60.5 cm at 24C[0m
+[0;32mI (132389) RANGE: Distance: 61.0 cm at 24C[0m
+[0;32mI (133419) RANGE: Distance: 57.1 cm at 24C[0m
+[0;32mI (134449) RANGE: Distance: 60.1 cm at 24C[0m
+[0;32mI (135479) RANGE: Distance: 60.1 cm at 24C[0m
+[0;32mI (136519) RANGE: Distance: 161.6 cm at 24C[0m
+[0;32mI (137549) RANGE: Distance: 60.5 cm at 24C[0m
+[0;32mI (138579) RANGE: Distance: 59.7 cm at 24C[0m
+[0;32mI (139609) RANGE: Distance: 60.1 cm at 24C[0m
+[0;32mI (140639) RANGE: Distance: 60.1 cm at 24C[0m
+[0;32mI (141669) RANGE: Distance: 59.7 cm at 24C[0m
+[0;32mI (142699) RANGE: Distance: 61.4 cm at 24C[0m
+[0;32mI (143729) RANGE: Distance: 59.7 cm at 24C[0m
+[0;32mI (144769) RANGE: Distance: 162.6 cm at 24C[0m
+[0;32mI (145799) RANGE: Distance: 81.0 cm at 24C[0m
+[0;32mI (146829) RANGE: Distance: 85.2 cm at 24C[0m
+[0;32mI (147869) RANGE: Distance: 126.8 cm at 24C[0m
+[0;32mI (148899) RANGE: Distance: 78.9 cm at 24C[0m
+[0;32mI (149939) RANGE: Distance: 126.4 cm at 24C[0m
+[0;32mI (150969) RANGE: Distance: 125.6 cm at 24C[0m
+[0;32mI (152019) RANGE: Distance: 126.0 cm at 24C[0m
+[0;32mI (153049) RANGE: Distance: 126.0 cm at 24C[0m
+[0;32mI (154099) RANGE: Distance: 126.2 cm at 24C[0m
+[0;32mI (155129) RANGE: Distance: 71.0 cm at 24C[0m
+[0;32mI (156169) RANGE: Distance: 151.6 cm at 24C[0m
+[0;32mI (157209) RANGE: Distance: 151.8 cm at 24C[0m
+[0;32mI (158239) RANGE: Distance: 67.4 cm at 24C[0m
+[0;32mI (159269) RANGE: Distance: 66.5 cm at 24C[0m
+[0;32mI (160299) RANGE: Distance: 68.2 cm at 24C[0m
+[0;32mI (161329) RANGE: Distance: 68.7 cm at 24C[0m
+[0;32mI (162359) RANGE: Distance: 56.9 cm at 24C[0m
+[0;32mI (163389) RANGE: Distance: 50.4 cm at 24C[0m
+[0;32mI (164429) RANGE: Distance: 154.3 cm at 24C[0m
+[0;32mI (165459) RANGE: Distance: 46.0 cm at 24C[0m
+[0;32mI (166489) RANGE: Distance: 45.8 cm at 24C[0m
+[0;32mI (167519) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (168549) RANGE: Distance: 73.0 cm at 24C[0m
+[0;32mI (169579) RANGE: Distance: 74.2 cm at 24C[0m
+[0;32mI (170609) RANGE: Distance: 74.2 cm at 24C[0m
+[0;32mI (171639) RANGE: Distance: 73.4 cm at 24C[0m
+[0;32mI (172669) RANGE: Distance: 74.2 cm at 24C[0m
+[0;32mI (173719) RANGE: Distance: 299.0 cm at 24C[0m
+[0;32mI (174749) RANGE: Distance: 30.5 cm at 24C[0m
+[0;32mI (175779) RANGE: Distance: 8.4 cm at 24C[0m
+[0;32mI (176809) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (177839) RANGE: Distance: 2.3 cm at 24C[0m
+[0;32mI (178869) RANGE: Distance: 2.3 cm at 24C[0m
+[0;32mI (179899) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (180929) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (181959) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (182989) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (184019) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (185049) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (186079) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (187109) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (188139) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (189169) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (190199) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (191229) RANGE: Distance: 4.6 cm at 24C[0m
+[0;32mI (192259) RANGE: Distance: 3.6 cm at 24C[0m
+[0;32mI (193289) RANGE: Distance: 8.4 cm at 24C[0m
+[0;32mI (194319) RANGE: Distance: 3.6 cm at 24C[0m
+[0;32mI (195349) RANGE: Distance: 3.9 cm at 24C[0m
+[0;32mI (196379) RANGE: Distance: 3.0 cm at 24C[0m
+[0;32mI (197409) RANGE: Distance: 2.0 cm at 24C[0m
+[0;32mI (198439) RANGE: Distance: 1.7 cm at 24C[0m
+[0;32mI (199469) RANGE: Distance: 7.1 cm at 24C[0m
+[0;32mI (200499) RANGE: Distance: 36.3 cm at 24C[0m
+[0;32mI (201529) RANGE: Distance: 40.3 cm at 24C[0m
+[0;32mI (202559) RANGE: Distance: 20.4 cm at 24C[0m
+[0;32mI (203589) RANGE: Distance: 23.3 cm at 24C[0m
+[0;32mI (204619) RANGE: Distance: 24.2 cm at 24C[0m
+[0;32mI (205649) RANGE: Distance: 30.0 cm at 24C[0m
+[0;32mI (206679) RANGE: Distance: 26.8 cm at 24C[0m
+[0;32mI (207709) RANGE: Distance: 22.0 cm at 24C[0m
+[0;32mI (208739) RANGE: Distance: 22.7 cm at 24C[0m
+[0;32mI (209769) RANGE: Distance: 23.0 cm at 24C[0m
+[0;32mI (210799) RANGE: Distance: 29.2 cm at 24C[0m
+[0;32mI (211859) RANGE: Distance: 482.3 cm at 24C[0m
+[0;32mI (212889) RANGE: Distance: 77.6 cm at 24C[0m
+[0;32mI (213949) RANGE: Distance: 483.3 cm at 24C[0m
+[0;32mI (214979) RANGE: Distance: 20.4 cm at 24C[0m
+[0;32mI (216009) RANGE: Distance: 20.7 cm at 24C[0m
+[0;32mI (217039) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (218069) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (219099) RANGE: Distance: 20.8 cm at 24C[0m
+[0;32mI (220129) RANGE: Distance: 23.0 cm at 24C[0m
+[0;32mI (221159) RANGE: Distance: 22.1 cm at 24C[0m
+[0;32mI (222189) RANGE: Distance: 23.0 cm at 24C[0m
+[0;32mI (223219) RANGE: Distance: 21.4 cm at 24C[0m
+[0;32mI (224249) RANGE: Distance: 22.7 cm at 24C[0m
+[0;32mI (225279) RANGE: Distance: 22.7 cm at 24C[0m
+[0;32mI (226309) RANGE: Distance: 23.3 cm at 24C[0m
+[0;32mI (227339) RANGE: Distance: 19.1 cm at 24C[0m
+[0;32mI (228369) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (229399) RANGE: Distance: 19.8 cm at 24C[0m
+[0;32mI (230429) RANGE: Distance: 20.1 cm at 24C[0m
+[0;32mI (231459) RANGE: Distance: 19.2 cm at 24C[0m
+[0;32mI (232489) RANGE: Distance: 20.4 cm at 24C[0m
+[0;32mI (233519) RANGE: Distance: 20.8 cm at 24C[0m
+[0;32mI (234549) RANGE: Distance: 19.1 cm at 24C[0m
+[0;32mI (235579) RANGE: Distance: 26.2 cm at 24C[0m
+[0;32mI (236609) RANGE: Distance: 37.7 cm at 24C[0m
+[0;32mI (237639) RANGE: Distance: 40.3 cm at 24C[0m
+[0;32mI (238669) RANGE: Distance: 38.4 cm at 24C[0m
+[0;32mI (239699) RANGE: Distance: 40.1 cm at 24C[0m
+[0;32mI (240729) RANGE: Distance: 39.4 cm at 24C[0m
+[0;32mI (241759) RANGE: Distance: 39.4 cm at 24C[0m
+[0;32mI (242789) RANGE: Distance: 40.1 cm at 24C[0m
+[0;32mI (243819) RANGE: Distance: 39.2 cm at 24C[0m
+[0;32mI (244849) RANGE: Distance: 26.8 cm at 24C[0m
+[0;32mI (245879) RANGE: Distance: 11.1 cm at 24C[0m
+[0;32mI (246909) RANGE: Distance: 10.1 cm at 24C[0m
+[0;32mI (247939) RANGE: Distance: 9.8 cm at 24C[0m
+[0;32mI (248969) RANGE: Distance: 9.8 cm at 24C[0m
+[0;32mI (249999) RANGE: Distance: 10.1 cm at 24C[0m
+[0;32mI (251029) RANGE: Distance: 10.8 cm at 24C[0m
+[0;32mI (252059) RANGE: Distance: 10.8 cm at 24C[0m
+[0;32mI (253089) RANGE: Distance: 10.1 cm at 24C[0m
+[0;32mI (254119) RANGE: Distance: 23.9 cm at 24C[0m
+[0;32mI (255149) RANGE: Distance: 30.5 cm at 24C[0m
+[0;32mI (256179) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (257209) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (258239) RANGE: Distance: 36.6 cm at 24C[0m
+[0;32mI (259269) RANGE: Distance: 36.6 cm at 24C[0m
+[0;32mI (260299) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (261329) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (262359) RANGE: Distance: 16.2 cm at 24C[0m
+[0;32mI (263389) RANGE: Distance: 16.2 cm at 24C[0m

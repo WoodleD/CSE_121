@@ -1,0 +1,150 @@
+Command: /home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/lucas/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/lucas/esp/lab6/lab6_1/build/i2c_tools.elf /home/lucas/esp/lab6/lab6_1/build/bootloader/bootloader.elf -m '/home/lucas/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/lucas/esp/esp-idf/tools/idf.py'
+[0;32mI (108) esp_image: segment 4: paddr=00033168 vaddr=40387020 sizeESP-ROM:esp32c3-eco7-20230720[0m
+Build:Jul 20 2023
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40383c6c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1460
+load:0x403cbf10,len:0xcb0
+load:0x403ce710,len:0x2fdc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.1-dev-8199-g4d59230ddff 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 15 2026 21:55:55[0m
+[0;32mI (25) boot: chip revision: v1.1[0m
+[0;32mI (26) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Partition Table:[0m
+[0;32mI (40) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (47) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (53) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (60) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (66) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=076ech ( 30444) map[0m
+[0;32mI (78) esp_image: segment 1: paddr=00017714 vaddr=3fc89600 size=018dch (  6364) load[0m
+[0;32mI (82) esp_image: segment 2: paddr=00018ff8 vaddr=40380000 size=07020h ( 28704) load[0m
+[0;32mI (94) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=13140h ( 78144) map[0m
+[0;32mI (108) esp_image: segment 4: paddr=00033168 vaddr=40387020 size=02490h (  9360) load[0m
+[0;32mI (110) esp_image: segment 5: paddr=00035600 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (115) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (129) cpu_start: Unicore app[0m
+[0;32mI (137) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (137) cpu_start: Pro cpu start user code[0m
+[0;32mI (137) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (139) app_init: Application information:[0m
+[0;32mI (143) app_init: Project name:     i2c_tools[0m
+[0;32mI (147) app_init: App version:      1c4d929-dirty[0m
+[0;32mI (151) app_init: Compile time:     Nov 15 2026 21:48:17[0m
+[0;32mI (156) app_init: ELF file SHA256:  adfd5ed46...[0m
+[0;32mI (161) app_init: ESP-IDF:          v6.1-dev-8199-g4d59230ddff[0m
+[0;32mI (166) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (170) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (174) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (178) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (184) heap_init: At 3FC8BE00 len 00034200 (208 KiB): RAM[0m
+[0;32mI (189) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (196) heap_init: At 3FCDC710 len 0000294C (10 KiB): Retention RAM[0m
+[0;32mI (202) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (207) spi_flash: detected chip: generic[0m
+[0;32mI (211) spi_flash: flash io: dio[0m
+[0;33mW (214) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (226) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (232) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (239) main_task: Started on CPU0[0m
+[0;32mI (239) main_task: Calling app_main()[0m
+[0;32mI (239) TEMP: probe 0x70: ESP_OK[0m
+[0;32mI (269) TEMP: distance: 8.636000[0m
+[0;32mI (1299) TEMP: distance: 25.840000[0m
+[0;32mI (2329) TEMP: distance: 15.963000[0m
+[0;32mI (3359) TEMP: distance: 1.989000[0m
+[0;32mI (4389) TEMP: distance: 2.006000[0m
+[0;32mI (5419) TEMP: distance: 1.989000[0m
+[0;32mI (6449) TEMP: distance: 2.006000[0m
+[0;32mI (7479) TEMP: distance: 6.086000[0m
+[0;32mI (8509) TEMP: distance: 20.451000[0m
+[0;32mI (9539) TEMP: distance: 22.627000[0m
+[0;32mI (10569) TEMP: distance: 11.322000[0m
+[0;32mI (11599) TEMP: distance: 9.639000[0m
+[0;32mI (12629) TEMP: distance: 9.996000[0m
+[0;32mI (13659) TEMP: distance: 10.965000[0m
+[0;32mI (14689) TEMP: distance: 9.316000[0m
+[0;32mI (15719) TEMP: distance: 9.316000[0m
+[0;32mI (16749) TEMP: distance: 10.336000[0m
+[0;32mI (17779) TEMP: distance: 8.993000[0m
+[0;32mI (18809) TEMP: distance: 9.979000[0m
+[0;32mI (19839) TEMP: distance: 9.962000[0m
+[0;32mI (20869) TEMP: distance: 9.996000[0m
+[0;32mI (21899) TEMP: distance: 10.302000[0m
+[0;32mI (22929) TEMP: distance: 9.996000[0m
+[0;32mI (23959) TEMP: distance: 9.979000[0m
+[0;32mI (24989) TEMP: distance: 9.656000[0m
+[0;32mI (26019) TEMP: distance: 9.639000[0m
+[0;32mI (27049) TEMP: distance: 10.982000[0m
+[0;32mI (28079) TEMP: distance: 14.637000[0m
+[0;32mI (29109) TEMP: distance: 16.286000[0m
+[0;32mI (30139) TEMP: distance: 19.142000[0m
+[0;32mI (31169) TEMP: distance: 42.670000[0m
+[0;32mI (32209) TEMP: distance: 124.593000[0m
+[0;32mI (33249) TEMP: distance: 125.358000[0m
+[0;32mI (34289) TEMP: distance: 125.749000[0m
+[0;32mI (35319) TEMP: distance: 21.080000[0m
+[0;32mI (36349) TEMP: distance: 22.049000[0m
+[0;32mI (37379) TEMP: distance: 17.578000[0m
+[0;32mI (38409) TEMP: distance: 18.207000[0m
+[0;32mI (39439) TEMP: distance: 19.788000[0m
+[0;32mI (40469) TEMP: distance: 18.530000[0m
+[0;32mI (41499) TEMP: distance: 18.513000[0m
+[0;32mI (42529) TEMP: distance: 18.513000[0m
+[0;32mI (43559) TEMP: distance: 3.587000[0m
+[0;32mI (44589) TEMP: distance: 15.980000[0m
+[0;32mI (45619) TEMP: distance: 22.355000[0m
+[0;32mI (46649) TEMP: distance: 20.434000[0m
+[0;32mI (47679) TEMP: distance: 18.853000[0m
+[0;32mI (48709) TEMP: distance: 18.207000[0m
+[0;32mI (49739) TEMP: distance: 18.207000[0m
+[0;32mI (50769) TEMP: distance: 19.159000[0m
+[0;32mI (51799) TEMP: distance: 19.176000[0m
+[0;32mI (52829) TEMP: distance: 19.805000[0m
+[0;32mI (53859) TEMP: distance: 19.805000[0m
+[0;32mI (54889) TEMP: distance: 19.805000[0m
+[0;32mI (55919) TEMP: distance: 19.805000[0m
+[0;32mI (56949) TEMP: distance: 19.805000[0m
+[0;32mI (57979) TEMP: distance: 18.836000[0m
+[0;32mI (59009) TEMP: distance: 19.482000[0m
+[0;32mI (60039) TEMP: distance: 19.482000[0m
+[0;32mI (61069) TEMP: distance: 19.142000[0m
+[0;32mI (62099) TEMP: distance: 20.128000[0m
+[0;32mI (63129) TEMP: distance: 24.361000[0m
+[0;32mI (64159) TEMP: distance: 30.583000[0m
+[0;32mI (65189) TEMP: distance: 16.286000[0m
+[0;32mI (66219) TEMP: distance: 39.219000[0m
+[0;32mI (67249) TEMP: distance: 15.963000[0m
+[0;32mI (68279) TEMP: distance: 16.303000[0m
+[0;32mI (69309) TEMP: distance: 29.002000[0m
+[0;32mI (70339) TEMP: distance: 26.129000[0m
+[0;32mI (71369) TEMP: distance: 15.946000[0m
+[0;32mI (72399) TEMP: distance: 42.687000[0m
+[0;32mI (73429) TEMP: distance: 1.989000[0m
+[0;32mI (74459) TEMP: distance: 2.006000[0m
+[0;33mW (75519) TEMP: echo stuck high[0m
+[0;33mW (76579) TEMP: echo stuck high[0m
+[0;32mI (77609) TEMP: distance: 4.488000[0m
+[0;32mI (78639) TEMP: distance: 29.257000[0m
+[0;32mI (79669) TEMP: distance: 28.730000[0m
+[0;32mI (80699) TEMP: distance: 29.002000[0m
+[0;32mI (81729) TEMP: distance: 29.274000[0m
+[0;32mI (82759) TEMP: distance: 29.002000[0m
+[0;32mI (83789) TEMP: distance: 29.019000[0m
+[0;32mI (84819) TEMP: distance: 28.730000[0m
+[0;32mI (85849) TEMP: distance: 29.784000[0m
+[0;32mI (86879) TEMP: distance: 29.529000[0m
+[0;32mI (87909) TEMP: distance: 28.713000[0m
+[0;32mI (88939) TEMP: distance: 29.019000[0m
+[0;32mI (89969) TEMP: distance: 29.784000[0m
+[0;32mI (91009) TEMP: distance: 145.248000[0m
+[0;32mI (92039) TEMP: distance: 5.780000[0m
+[0;32mI (93069) TEMP: distance: 6.103000[0m
+[0;32mI (94099) TEMP: distance: 6.426000[0m
+[0;32mI (95129) TEMP: distance: 15.963000[0m
+[0;32mI (96159) TEMP: distance: 3.264000[0m
+[0;32mI (97189) TEMP: distance: 4.522000[0m
